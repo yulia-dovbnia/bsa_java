@@ -4,12 +4,11 @@ import java.util.stream.Stream;
 
 public final class UniqueSortedStream {
 
-	private UniqueSortedStream() {
-	}
+    private UniqueSortedStream() {
+    }
 
-	public static <T> Stream<Row<T>> uniqueRowsSortedByPK(Stream<Row<T>> stream) {
-		// TODO: Ваш код тут. Помните про терминальные операции! :)
-		return null;
-	}
-
+    public static <T> Stream<Row<T>> uniqueRowsSortedByPK(Stream<Row<T>> stream) {
+        // TODO: Ваш код тут. Помните про терминальные операции! :)
+        return stream.sorted().distinct();
+    }
 }
