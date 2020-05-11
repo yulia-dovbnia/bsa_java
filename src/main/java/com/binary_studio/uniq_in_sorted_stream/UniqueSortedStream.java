@@ -4,10 +4,10 @@ import java.util.stream.Stream;
 
 public final class UniqueSortedStream {
 
-    private UniqueSortedStream() {
-    }
+	private UniqueSortedStream() {
+	}
 
-    public static <T> Stream<Row<T>> uniqueRowsSortedByPK(Stream<Row<T>> stream) {
-        return stream.sorted().distinct();
-    }
+	public static <T> Stream<Row<T>> uniqueRowsSortedByPK(Stream<Row<T>> stream) {
+		return stream.sorted().distinct();
+	}
 }

@@ -40,7 +40,8 @@ public final class DepartmentMaxDepth {
 				}
 				path.pop();
 				wq.pop();
-			} else {
+			}
+			else {
 				path.push(currentDepartment);
 				if (currentDepartment.subDepartments != null) {
 					currentDepartment.subDepartments.forEach(child -> {
@@ -49,7 +50,6 @@ public final class DepartmentMaxDepth {
 						}
 					});
 				}
-
 			}
 		}
 		return depth;
